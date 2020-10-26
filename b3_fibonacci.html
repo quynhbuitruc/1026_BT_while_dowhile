@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>20 số đầu tiên của dãy fibonacci</title>
+</head>
+
+<body>
+    <h2>20 số đầu tiên của dãy fibonacci</h2>
+    <p id="display"></p>
+    <script>
+        let so1 = 0
+        let so2 = 1
+        let sum = so1 + so2
+        while (sum < 15000) {
+            document.getElementById("display").innerHTML += "<br>" + sum
+            so1 = so2
+            so2 = sum
+            sum = so1 + so2
+            }
+    </script>
+</body>
+
+</html>
