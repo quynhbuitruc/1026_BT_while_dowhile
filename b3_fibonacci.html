@@ -8,22 +8,20 @@
 </head>
 
 <body>
-    <h2>20 số đầu tiên của dãy fibonacci</h2>
-    <p>0</p>
     <p id="display"></p>
     <script>
         let count = 1
         let so1 = 0
         let so2 = 1
-        let sum = so1 + so2
+        let sum = 0
         do {
-            document.getElementById("display").innerHTML += "<br>" + sum
+            sum = so1 + so2
+            document.getElementById("display").innerHTML += "<br>" + so1
             so1 = so2
             so2 = sum
-            sum = so1 + so2
             count++
         }
-        while (count < 20)
+        while (count < 21)
 
     </script>
 </body>
