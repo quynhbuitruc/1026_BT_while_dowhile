@@ -1,20 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FizzBUZZ</title>
 </head>
+
 <body>
     <p id="display"></p>
     <script>
         let so = 1
         do {
-            
-            document.getElementById("display").innerHTML += "<br>" + so
-            so ++
-
+            if (so % 3 == 0 && so % 5 == 0) {
+                document.getElementById("display").innerHTML += "<br>FizzBUZZ"
+            } else if (so % 3 == 0) {
+                document.getElementById("display").innerHTML += "<br>Fizz"
+            } else if (so % 5 == 0) {
+                document.getElementById("display").innerHTML += "<br>Buzz"
+            } else {
+                document.getElementById("display").innerHTML += "<br>" + so
+            }
+            so++
+            console.log(so)
         } while (so < 101)
     </script>
 </body>
+
 </html>
