@@ -11,15 +11,18 @@
     <h2>20 số đầu tiên của dãy fibonacci</h2>
     <p id="display"></p>
     <script>
-        let so1 = 0
-        let so2 = 1
-        let sum = so1 + so2
-        while (sum < 15000) {
+        do {
+            let so1 = 0
+            let so2 = 1
+            let count = 1
+            let sum = so1 + so2
             document.getElementById("display").innerHTML += "<br>" + sum
             so1 = so2
             so2 = sum
             sum = so1 + so2
-            }
+            count++
+        }
+        while (count < 20)
     </script>
 </body>
 
