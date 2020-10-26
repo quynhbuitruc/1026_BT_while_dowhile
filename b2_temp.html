@@ -11,10 +11,14 @@
     <script>
         let temp = Number(prompt("Nhập nhiệt độ hiện tại"))
         while ( temp < 20 ) {
+            console.log(temp)
             alert ("Tăng nhiệt độ")
+            temp = Number(prompt("Nhập nhiệt độ hiện tại"))
         }
-        while (temp > 100) {
+        while ( temp > 100 ) {
+            console.log(temp)
             alert ("Giảm nhiệt độ")
+            temp = Number(prompt("Nhập nhiệt độ hiện tại"))
         }
     </script>
 </body>
