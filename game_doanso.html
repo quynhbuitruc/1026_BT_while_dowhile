@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ĐOÁN SỐ TRÚNG THƯỞNG</title>
+</head>
+
+<body>
+    <script>
+        let inputNo = Number(prompt("Choose number from 1 to 20"))
+        let attempt = 1
+        while (attempt < 3 && inputNo != 7) {
+            if (inputNo < 7) {
+                alert("the lucky number >" + " " + inputNo)
+                inputNo = Number(prompt("Choose another number"))
+                attempt++
+            } else if (inputNo > 7) {
+                alert("the lucky number <" + " " + inputNo)
+                inputNo = Number(prompt("Choose another number"))
+                attempt++
+            }
+        } if (inputNo == 7) {
+            alert("ConGRATS! You've got the lucky number")
+        } else {
+            alert("Wish you luck next time :)")
+        }
+    </script>
+</body>
+
+</html>
