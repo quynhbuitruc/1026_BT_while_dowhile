@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Số đầu tiên của dãy fibonacci chia hết cho 5</title>
+</head>
+
+<body>
+    <h2>Số đầu tiên của dãy fibonacci chia hết cho 5</h2>
+    <p id="display"></p>
+    <script>
+        let so1 = 0
+        let so2 = 1
+        let sum = so1 + so2
+        let divide = sum % 5
+        while (divide != 0) {
+            so1 = so2
+            so2 = sum
+            sum = so1 + so2
+            console.log(sum)
+            divide = sum % 5
+            }
+            document.getElementById("display").innerHTML = sum
+    </script>
+</body>
+
+</html>
